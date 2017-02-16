@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:og="http://ogp.me/ns#" xmlns:mixi="http://mixi-platform.com/ns#" >
+<head>
+<meta property="mixi:title" content="No.9 葛西店" />
+<meta property="mixi:description" content="No.9 葛西店&nbsp; ダーツバー検索 DARTSLIVE SEARCH">
+<meta property="og:image" content="http://search.dartslive.jp/common2/img/logo.png" />
+<link rel="mixi-check-image" type="image/jpeg" href="http://search.dartslive.jp/common2/img/logo.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>No.9 葛西店&nbsp; ダーツバー検索 DARTSLIVE SEARCH</title>
+
+<!--====================== meta ======================-->
+<meta name="keywords" content='dartslive,ダーツライブ,darts bar search,ダーツ,ダーツバー,検索,ダーツショップ,DARSLIVE2,TouchLive,ゲームセンター,マンガ喫茶' />
+<meta name="description" content="全国のDARTSLIVE設置店検索サイト。ダーツバー、ダーツショップ検索。DARTSLIVE DARTS BAR SEARCH.DARTSLIVE,DARSLIVE2,TouchLive等" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!--====================== common style ======================-->
+<!-- stylesheet ja_JP-->
+<link rel="shortcut icon" href="/common2/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/common2/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" media="handheld" href="http://www.dartslive.jp/k/" />
+<link rel="stylesheet" type="text/css" href="/common2/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/search.css" />
+<link rel="stylesheet" type="text/css" href="/common2/css/thickbox.css" />
+<link rel="stylesheet" type="text/css" href="/common2/css/league.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="/common2/css/league_playoff.css" media="all"/>
+<style type="text/css">
+<!--
+#map_canvas {
+	width : 318px;
+	height: 232px;
+	background-image: url(http://search.dartslive.jp/common2/img/loading.gif);
+	background-repeat:no-repeat;
+	background-position: center center;
+
+-->
+</style>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/common2/css/searchie8.css" /> <![endif]-->
+<!-- javascript -->
+<script type="text/javascript" src="/common2/js/jquery.min.js"></script>
+<script type="text/javascript" src="/common2/js/shop-img.js"></script>
+<script type="text/javascript" src="/common2/js/rollover.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.jsonp-2.1.2.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyDrA0eONfsvByup7e54xNCrCUM5KA9MVLE"></script>
+<script type="text/javascript" src="/common2/js/dlMap.js"></script>
+<script type="text/javascript">$(function(){mapinit2("d707022af3e6dd7c0d9b047a20a7ba1e",3);});</script>
+<script type="text/javascript" src="/common2/js/thickbox.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</head>
+
+<body id="top">
+<a name="pagetop" id="pagetop"></a>
+
+<!--==================================================================
+ wrapper
+==================================================================-->
+<div id="wrapper">
+<!--==================================================================
+ container
+==================================================================-->
+<div id="container">
+
+
+
+<!--==================================================================
+ header
+==================================================================-->
+<div id="header" class="png_bg">
+<p class="lead-txt">ダーツバー検索　DARTSLIVE SEARCH</p>
+<div class="dl-logo"><a href="http://www.dartslive.com/jp/" target="_blank"><img src="/common2/img/dl_logo.gif" alt="DARTSLIVE" width="119" height="27" /></a></div>
+<div class="btn-region png_bg"><a href="/country.jsp?TB_iframe=true&width=615&height=390" class="thickbox png_bg">他の国・地域を選択してください</a></div>
+<h1 class="logo"><a href="/" ><img src="/common2/img/logo.png" alt="DARTSLIVE SEARCH" width="236" height="74" border="0" /></a></h1>
+<div class="region-txt">日本</div>
+<p>&nbsp;</p>
+</div>
+<!--==================================================================
+ //header
+==================================================================-->
+<!--==================================================================
+ contents
+==================================================================-->
+
+
+<div id="contents">
+<span class="cnt-head"><img src="/common2/img/bg_contents_top.png" width="959" height="10" /></span>
+<div class="inner png_bg">
+<div id="minignav" class="clfx">
+<a href="/list/league">
+	<div class="link"><img src="/common2/img/icn_league_big.gif"  width="42" height="31"/><p class="league">OFFICIAL LEAGUE</p></div>
+	</a>
+	<a href="/list/mahjonglive">
+	<div class="link"><img src="/common2/img/icn_ml_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />麻雀LIVE</p></div>
+	</a>
+ 	<a href="/list/touchlive">
+	<div class="link"><img src="/common2/img/icn_tl_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />TouchLive</p></div>
+	</a>
+	<a href="/list/dartslive2">
+	<div class="link"><img src="/common2/img/icn_dl_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />DARTSLIVE2</p></div>
+	</a>
+</div>
+<br style="clear:both" />
+<div class="breadcrumb">
+<a href="/">TOP</a>
+
+	&nbsp;&gt;&nbsp;<a href="/list/%E6%9D%B1%E4%BA%AC%E9%83%BD">東京都</a>
+
+&nbsp;&gt;&nbsp;<a href="/list/%E6%9D%B1%E4%BA%AC%E9%83%BD/%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA">江戸川区</a>
+
+&nbsp;&gt;&nbsp;No.9 葛西店</div>
+
+<div class="shop-info clearfix">
+<dl>
+<dt></dt>
+<dd>No.9 葛西店</dd>
+</dl>
+<div class="typeblk">
+<div class="type01">
+	<div class="icn-shop"><img src="/common2/img/icn_shop_dl2.gif" width="124" height="19" alt="DARTSLIVE2" /></div>
+	<div class="icn-shop-no">4<span>台</span></div>
+	<!-- / .type03 --></div>
+<div class="type03">
+	<div class="icn-shop"><img src="/common2/img/icn_shop_dl.gif" width="124" height="19" alt="DARTSLIVE" /></div>
+	<div class="icn-shop-no">1<span>台</span></div>
+<!-- / .type01 --></div>
+<div class="type05">
+	 <div class="icn-shop"><img src="/common2/img/icn_shop_leaguel.gif" width="124" height="19" alt="DARTSLIVE" />
+	 </div>
+	<!-- / .type05 --></div>
+</div>
+
+<br style="clear:both;" />
+
+<!-- / .shop-info --></div>
+<div class="btn-print clearfix"><span class="txt"><a href="/printmap.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;">印刷画面を表示</a></span></div>
+<div class="mainContents">
+
+<div class="shop-tab">
+	<div class="btn-info"><span>ショップ情報</span></div>
+	<div class="btn-data"><span><a href="/data/d707022af3e6dd7c0d9b047a20a7ba1e">DARTSLIVEデータ</a></span></div>
+</div>
+<div class="contentsLeft-sp">
+
+<div class="shopPhotoArea  png_bg">
+	<div class="shopPhoto">
+	<div class="mainimg">
+		<div id="mainimg1"><img /></div>
+		<div id="mainimg2"><img /></div>
+	</div>
+	<div class="thmbimg">
+			<div id="ups" title="前へ"><img src="/common2/img/arrow_up.png" width="15" height="13" /></div>
+			<div id="thmbimgs">
+				<ul>
+				<li><div><img src="/photo/3037cd3ac3008e07eb38c5183e0c9f3a0d9b047a20a7ba1e" /></div></li>
+				</ul>
+			<!-- / #thmbimgs --></div>
+			<div id="dws" title="次へ"><img src="/common2/img/arrow_down.png" width="15" height="13" alt="up" /></div>
+	</div>
+	</div>
+	<div class="img-caption png_bg"></div>
+<!-- / .shopPhoto --></div>
+<div class="shopAccess">
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<th>住所</th>
+	<td>東京都江戸川区東葛西6-6-15 藤美ビル2F</td>
+  </tr>
+  <tr>
+	<th>電話</th>
+	<td>03-3689-8999</td>
+  </tr>
+  <tr>
+	<th>最寄駅</th>
+	<td>
+	 東西線葛西駅徒歩３分<br />
+	 駅の目の前の環七を南へ一つ目のＴＳＵＴＡＹＡさんのある信号を左に100m<br />
+	 進んだ左手に！ウサギの看板が目印です。<br />
+	 </td>
+  </tr>
+<tr>
+	<th>営業時間</th>
+	<td>
+	<p>
+	日,祝&nbsp;&nbsp;
+	12:00～01:00</p>
+	<p>
+	平日&nbsp;&nbsp;
+	17:00～04:00</p>
+	<p>
+	土&nbsp;&nbsp;
+	12:00～04:00</p>
+	</td>
+  </tr>
+<tr>
+	<th>定休日</th>
+	<td>
+	<p>年中無休</p>
+	<p></p>
+	</td>
+  </tr>
+<tr>
+	<th>URL</th>
+	<td><a href="" target="_blank"></a></td>
+  </tr>
+<tr>
+	<th>Twitter</th>
+	<td></td>
+  </tr>
+</table>
+<!-- / .shopAccess --></div>
+
+
+<div class="shopComment">
+<h2 class="ttl">ショップコメント</h2>
+<p class="comment">毎日ハッピーアワー♪OPEN～20時限定で、ビール・カクテル・サワーが￥300☆土日ランチもやってます♪ご飯＋フリードリンク＋ダーツ10クレがなんと￥1000☆月曜日はレディースデー!女性の方は終日飲食代半額☆水曜日は￥1000投げ放題☆</p>
+<!-- / .shopComment --></div>
+<div class="comment-btm"><img src="/common2/img/comment_btm.gif" width="551" height="7" /></div>
+
+
+<div class="shopInfo">
+<h2><span>ショップ情報</span></h2>
+<div class="shopInfo-txt-area">
+<p>葛西駅から徒歩3分<br />
+ダッシュで30秒！！<br />
+LIVE1が1台、LIVE２が4台！<br />
+<br />
+<br />
+☆営業時間のご案内☆<br />
+月～金曜日：17時～翌4時<br />
+土曜日    ：12時～翌4時<br />
+日、祝日  ：12時～翌1時<br />
+<br />
+----------------------------------------------<br />
+<br />
+☆店内リーグ開催中☆<br />
+<br />
+Fee\300で誰でも参加可能♪<br />
+詳しくはスタッフまで!!<br />
+<br />
+☆ハウストーナメント情報☆<br />
+<br />
+------------------------------------------<br />
+<br />
+広々とした店内に台間隔もゆったりと、皆様で楽しい時間を過ごしてみませんか？<br />
+・チャージ無し<br />
+・生ビール￥500<br />
+・カクテル￥500～<br />
+・その他スポットお薦めメニューをご用意してお待ちしています。<br />
+<br />
+ランチタイムセット復活!!<br />
+12時～15時まで<br />
+お食事+ドリンク+ダーツ10クレorビリヤード2hが1000円☆<br />
+<br />
+毎日ハッピーアワー開催中♪<br />
+２０時までに来店のお客様は、<br />
+な、な、なんと！！<br />
+生ビール･カクテル･サワー、ハイボールが３００円に！<br />
+<br />
+ビリヤードにフリータイムが登場☆<br />
+平日：19時までお一人様1000円！<br />
+土日祝：3時間お一人様1000円!!<br />
+(OPEN～19:00御入店のお客様に限ります)<br />
+<br />
+さらに!!<br />
+OPEN～19:00は300円でソフトドリンク飲み放題!!<br />
+<br />
+----------------------------------------------<br />
+<br />
+イベント盛りだくさん№.9！<br />
+<br />
+月曜日：レディースデイ！！<br />
+女性のお客様ご飲食半額！<br />
+火、木曜日：ビリヤード撞き放題！！<br />
+お一人様￥1,000で終日撞き放題☆<br />
+水曜日：ダーツ投げ放題！！<br />
+お一人様￥1,000で終日投げ放題☆<br />
+（混雑状況により、他のお客様と交代制となりますので、ご了承下さい。）<br />
+【BULLキリ番】<br />
+NO.9でプレイ中に1000本以上のBULLキリ番が出たらドリンクチケットプレゼント☆<br />
+<br />
+大好評により継続決定!!<br />
+雨の日投げ放題!!!<br />
+雨の日に傘をさしてのご来店で投げ放題!!!<br />
+（24時最終受付）<br />
+<br />
+--------------------------------------------------<br />
+<br />
+☆スタッフ情報☆<br />
+ヒデ　rt.11<br />
+店長です☆<br />
+しぅ    rt.14<br />
+モンストもご一緒に!!<br />
+さぁや　rt.7<br />
+最近ビリヤードにはまり中☆対戦募集中！！<br />
+かずま rt.9<br />
+金髪料理長☆まかない担当☆<br />
+まーたん　rt.4<br />
+最近ダーツ始めました♪モデルの様にスラッとしてます☆<br />
+よしお　rt.未知数<br />
+年上南米系男子☆<br />
+あいら rt.7 <br />
+新人です☆DLO千葉シングルス準優勝しましたよ～☆ <br />
+<br />
+木曜日はプロダーツプレイヤー<br />
+RT.17【後藤　卓也（カツオ）】<br />
+Japan Stage 5 BEST8!!<br />
+気軽に対戦してみて下さい♪<br />
+<br />
+☆プレイヤー情報☆<br />
+入江健太　rt.15<br />
+現役JAPANプロです♪<br />
+隊長★No.9　rt.12<br />
+葛西のあばれるくん♪<br />
+<br />
+<br />
+不定期で投げてるので、見つけたらどんどん対戦してみてください☆<br />
+<br />
+--------------------------------------------------<br />
+<br />
+女性スタッフ大募集中!!<br />
+お酒もダーツも初心者大歓迎☆<br />
+気軽にご連絡ください☆<br />
+<br />
+<br />
+<br />
+今日もナインでエンジョイダーツ☆<br />
+スタッフ一同お待ちしております♪</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+<div class="visitShop">
+<h2><span>このお店によく行く人はこんなお店にも行っています</span></h2>
+<div class="visitShop-txt-area">
+<ul>
+<li><span class="lnk"><a href="/shop/b86b97351830146d0d9b047a20a7ba1e">B-FLATT</a></span>東京都江戸川区中葛西5-32-2</li>
+<li><span class="lnk"><a href="/shop/7bdfe47f8f6a67e10d9b047a20a7ba1e">POOL STAGE ミッキー＆ネプチューン</a></span>東京都江戸川区一之江8-4-3 フラットセゼッション2F</li>
+<li><span class="lnk"><a href="/shop/8274dc15fba369c525d56fb0e5c39bac">UP西葛西</a></span>東京都江戸川区西葛西6-13-1 たかみビル4F</li>
+<li><span class="lnk"><a href="/shop/1b26efa1e0147e390d9b047a20a7ba1e">キャノンボール西船橋店</a></span>千葉県船橋市本郷町631</li>
+<li><span class="lnk"><a href="/shop/811f47dc8cd343ef0d9b047a20a7ba1e">Cheer's Cafe 浦安店</a></span>千葉県浦安市当代島2-1-27 当代島石井ビル2F</li>
+<li><span class="lnk"><a href="/shop/19a5b0ef4b47581a0d9b047a20a7ba1e">ラウンドワン市川鬼高店</a></span>千葉県市川市鬼高4-1-3</li>
+<li><span class="lnk"><a href="/shop/d0504af9b97f879f0d9b047a20a7ba1e">アプレシオ 西葛西店</a></span>東京都江戸川区西葛西6-7-1 メトロアーケードA棟2Ｆ</li>
+<li><span class="lnk"><a href="/shop/2ca5791469faea530d9b047a20a7ba1e">ラウンドワンさいたま栗橋店</a></span>埼玉県久喜市小右衛門192-1</li>
+<li><span class="lnk"><a href="/shop/8938385eb5b2359e0d9b047a20a7ba1e">R・POOL@本八幡</a></span>千葉県市川市平田1-10-22 春日コーポ2F</li>
+<li><span class="lnk"><a href="/shop/4b5bfef0c8028c8b790ab824ce8730e5">快活CLUB 幸手店</a></span>埼玉県幸手市中3-19-32</li>
+</ul>
+
+</div>
+
+</div>
+<!-- / .contentsLeft --></div>
+
+
+<div class="contentsRight-sp">
+<div class="mapArea">
+<h3>周辺地図</h3>
+<div style="margin-bottom:10px;" id="map_canvas"></div>
+<p class="btn-map-detail"><span><a href="/printmap.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;">詳細な地図を確認する</a></span></p>
+<!-- / .mapArea --></div>
+<div class="shopLeague">
+<h3><span>このお店に所属するリーグチーム</span></h3>
+	<div class="shopLeagueTeams">
+		<div class="leagueArea official">
+				<div class="title">OFFICIAL LEAGUE</div>
+
+				<div class="leagueTeameList">
+					<div class="teamArea">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">JPL 16-17東京13</div></div>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=2d49dcf3a43b2f3a&sid=f454cb89828a1cfe&did=9163ac3c4b02527e" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">JPL 16-17東京13</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=2d49dcf3a43b2f3a&sid=f454cb89828a1cfe&did=9163ac3c4b02527e&tid=6bfdb9d22c8df9b0" target="_blank"><span class="name">NINE PIECE</span><span class="rank">
+												<span class="crawn"></span>
+													1位</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">JPL 16-17東京14</div></div>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=d74240b16b183bc5&sid=f454cb89828a1cfe&did=50cdf3eca98d0e38" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">JPL 16-17東京14</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=d74240b16b183bc5&sid=f454cb89828a1cfe&did=50cdf3eca98d0e38&tid=985f4a1622e714fe" target="_blank"><span class="name">S9素人</span><span class="rank">
+												5位</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">東京PO1st-14</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=be021ee3e70efde4&sid=fec1ae84bb28bd87&did=f3dde84fc33b410d" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">東京PO1st-14</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=be021ee3e70efde4&sid=fec1ae84bb28bd87&did=f3dde84fc33b410d&tid=7d246130a68191f0" target="_blank"><span class="name">S9 素人</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">東京PO2nd-12</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=05164885ba4b65e1&sid=fec1ae84bb28bd87&did=859229de2e22dae1" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">東京PO2nd-12</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=05164885ba4b65e1&sid=fec1ae84bb28bd87&did=859229de2e22dae1&tid=7d246130a68191f0" target="_blank"><span class="name">S9 素人</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">JAPAN LEAGUE KANTOU 1stSEASON FINAL block-5</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=c380f47ad553a2f7&sid=fec1ae84bb28bd87&did=67ea209cbe03925a" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">JAPAN LEAGUE KANTOU 1stSEASON FI</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=c380f47ad553a2f7&sid=fec1ae84bb28bd87&did=67ea209cbe03925a&tid=7d246130a68191f0" target="_blank"><span class="name">S9 素人</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">JAPAN LEAGUE KANTOU 1stSEASON FINAL Semifinal-6</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=a9efd3341afa7d5f&sid=fec1ae84bb28bd87&did=969d7bbe786d9d1b" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">Semifinal-6</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=a9efd3341afa7d5f&sid=fec1ae84bb28bd87&did=969d7bbe786d9d1b&tid=7d246130a68191f0" target="_blank"><span class="name">S9 素人</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">東京PO1ｓｔ‐7</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=a62752902999ac48&sid=fec1ae84bb28bd87&did=775d93ef6ae68ce5" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">東京PO1ｓｔ‐7</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=a62752902999ac48&sid=fec1ae84bb28bd87&did=775d93ef6ae68ce5&tid=f9a7cb4b87ed24bc" target="_blank"><span class="name">S9素人</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">東京PO1ｓｔ‐14</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=0012911305bb4fe0&sid=fec1ae84bb28bd87&did=88e822333ab0bac8" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">東京PO1ｓｔ‐14</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=0012911305bb4fe0&sid=fec1ae84bb28bd87&did=88e822333ab0bac8&tid=3c6f236d7e79a0a8" target="_blank"><span class="name">NINE PEACE</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+								<div class="teamArea playoff">
+									<div class="leagueTitle">
+										<span class="icon"></span>
+										<div class="leagueData"><div class="leagueName">東京PO2nd-6</div></div>
+										<span class="icon_po"><span class="text">プレーオフ</span></span>
+										</div>
+									<div class="leagueData">
+										<div class="division"><a href="http://league.dartslive.JP/league/detail.jsp?lid=352d9dbc58117c2b&sid=fec1ae84bb28bd87&did=58babfde939fa7ea" target="_blank"><div class="innerDecorate">
+											<span class="title">Division</span>
+											<span class="name">東京PO2nd-6</span>
+										</div></a></div>
+										<ul class="teamList">
+											<li class="team"><a href="http://league.dartslive.JP/admin/team/info.jsp?lid=352d9dbc58117c2b&sid=fec1ae84bb28bd87&did=58babfde939fa7ea&tid=f9a7cb4b87ed24bc" target="_blank"><span class="name">S9素人</span><span class="rank">
+												</span></a>
+												</li>
+											</ul>
+							</div><!-- /.leagueData -->
+								</div><!-- /.teamArea -->
+
+							</div>
+			<div class="help"><a href="http://league.dartslive.jp/help/" target="_blank"><div class="innerDecorate">OFFICIAL LEAGUEとは？</div></a></div>
+			</div><!--/.official-->
+		</div>
+</div>
+<div class="tellFriends">
+<p class="ttl">このお店をみんなにしらせる</p>
+<p class="btn-send"><span><a href="/mail.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e&TB_iframe=true&width=500&height=260" class="thickbox">PCまたはケータイに送る</a></span></p>
+<div class="sns">
+
+<ul>
+<li>
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://search.dartslive.jp/shop/d707022af3e6dd7c0d9b047a20a7ba1e" data-text="No.9 葛西店 #dartslive_shop" data-count="horizontal" data-related="dartslive:dartslvie Official">Tweet</a>
+</li>
+<li><iframe src="http://www.facebook.com/plugins/like.php?app_id=230487806983958&amp;href=http%3A%2F%2Fsearch.dartslive.jp%2Fshop%2Fd707022af3e6dd7c0d9b047a20a7ba1e&amp;send=false&amp;layout=button_count&amp;width=450&amp;width=40&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></li>
+</ul>
+
+<ul>
+<li>
+<a href="http://mixi.jp/share.pl" class="mixi-check-button" data-button="button-2" data-url="http://search.dartslive.jp/shop/d707022af3e6dd7c0d9b047a20a7ba1e" data-key="454dd7c1ac55f79649e804beead7b2e75184b5b2">Check</a>
+<script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script>
+</li>
+<li><g:plusone size="medium"></g:plusone></li>
+</ul>
+</div>
+
+<!-- / .tellFriends --></div>
+<div class="blogparts">
+<h3><span>HOME SHOPをBLOGに貼ろう！</span></h3>
+<div class="blg-inner">
+<iframe src="http://tool.dartslive.jp/homeshop/blogshop.html?r=d707022af3e6dd7c0d9b047a20a7ba1e" scrolling="no" frameBorder="0" height="150" width="160" marginheight="0" marginwidth="0"></iframe>
+
+<p class="btn-dl"><span><a href="/blogdl.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e" onClick="window.open('/blogdl.jsp?si=d707022af3e6dd7c0d9b047a20a7ba1e','win','width=600,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;">DARTSLIVE版</a></span></p>
+</div>
+
+
+<!-- / .blogparts --></div>
+<!-- / .contentsright --></div>
+<!-- / .mainContents --></div>
+
+
+<!--banner includeファイル-->
+<div class="adarea">
+<ul class="list_2">
+<li>
+<a href="http://www.dartslive.com/jp/event/cp_moteki/" target="_blank" onClick="_gaq.push(['_trackEvent', 'underbnr', 'bnr1']);">
+<img src="http://search.dartslive.jp/common/bnr/jp/5428.jpg" alt="" width="287" height="62" /></a>
+</li>
+<li>
+<a href="http://www.dartslive.com/jp/news/tl/entry21204.html" target="_blank" onClick="_gaq.push(['_trackEvent', 'underbnr', 'bnr2']);">
+<img src="http://search.dartslive.jp/common/bnr/jp/5506.jpg" alt="" width="287" height="62" /></a>
+</li>
+</ul>
+</div>
+<!-- / .inner --></div>
+<span class="cnt-btm"><img src="/common2/img/bg_contents_btm.png" width="959" height="15" /></span>
+
+<!-- / #contents --></div>
+
+<!--==================================================================
+ //contents
+==================================================================-->
+
+<!--footer includeファイル-->
+
+<!--footer includeファイル-->
+
+<br />
+<!--==================================================================
+ footer
+==================================================================-->
+
+<div id="footer" class="cmn_cl">
+<div class="inner">
+<p class="copyright">Copyright &copy; DARTSLIVE Co.,Ltd. All rights reserved.</p>
+</div>
+</div>
+<!--==================================================================
+ //footer
+==================================================================-->
+</div>
+<!--==================================================================
+ //container
+==================================================================-->
+
+
+</div>
+<!--==================================================================
+ //wrapper
+==================================================================-->
+
+
+<div id="checkImgFrm"><img name="checkImg" id="checkImg" / ></div>
+<!-- google -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12103462-24']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- //google -->
+<!-- Universal Analytice -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-60362400-4', 'auto');
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', 'jp');
+ga('set', 'dimension2', 'pc');
+ga('send', 'pageview');
+</script>
+<!-- //Universal Analytice -->
+</body>
+</html>

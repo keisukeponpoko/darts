@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ダーツバー検索　DARTSLIVE SEARCH</title>
+
+<!--====================== meta ======================-->
+<meta name="keywords" content='dartslive,ダーツライブ,darts bar search,ダーツ,ダーツバー,検索,ダーツショップ,DARSLIVE2,TouchLive,ゲームセンター,マンガ喫茶' />
+<meta name="description" content="全国のDARTSLIVE設置店検索サイト。ダーツバー、ダーツショップ検索。DARTSLIVE DARTS BAR SEARCH.DARTSLIVE,DARSLIVE2,TouchLive等" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!--====================== common style ======================-->
+<!-- stylesheet -->
+<link rel="shortcut icon" href="/common2/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/common2/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" media="handheld" href="http://www.dartslive.jp/k/" />
+
+<link rel="stylesheet" type="text/css" href="/common2/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/common2/css/search.css" />
+<link rel="stylesheet" type="text/css" href="/common2/css/thickbox.css" />
+<script type="text/javascript" src="/common2/js/jquery.min.js"></script>
+<script type="text/javascript" src="/common2/js/rollover.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.fieldtag.js"></script>
+<script type="text/javascript">/* <![CDATA[ */
+$(function(){
+  $("#freeword").fieldtag();
+});
+/* ]]> */</script>
+<script type="text/javascript" src="/common2/js/bypage/pc/index.js"></script>
+<script type="text/javascript" src="/common2/js/thickbox.js"></script>
+<script src="/common2/js/iepngfix_tilebg.js" type="text/javascript"></script>
+</head>
+
+<body id="top">
+<a name="pagetop" id="pagetop"></a>
+
+<!--==================================================================
+ wrapper
+==================================================================-->
+<div id="wrapper">
+<!--==================================================================
+ container
+==================================================================-->
+<div id="container">
+
+
+<!--==================================================================
+ header
+==================================================================-->
+<div id="header" class="png_bg">
+<p class="lead-txt">ダーツバー検索　DARTSLIVE SEARCH</p>
+<div class="dl-logo"><a href="http://www.dartslive.com/jp/" target="_blank"><img src="/common2/img/dl_logo.gif" alt="DARTSLIVE" width="119" height="27" /></a></div>
+<div class="btn-region png_bg"><a href="/country.jsp?TB_iframe=true&width=615&height=390" class="thickbox png_bg">他の国・地域を選択してください</a></div>
+<h1 class="logo"><a href="/" ><img src="/common2/img/logo.png" alt="DARTSLIVE SEARCH" width="236" height="74" border="0" /></a></h1>
+<div class="region-txt">日本</div>
+<p>&nbsp;</p>
+</div>
+<!--==================================================================
+ //header
+==================================================================-->
+<!--==================================================================
+ contents_jp
+==================================================================-->
+
+
+<div id="contents">
+<span class="cnt-head"><img src="/common2/img/bg_contents_top.png" width="959" height="10" /></span>
+<div class="inner png_bg">
+<div id="minignav" class="clfx">
+<a href="/list/league">
+	<div class="link"><img src="/common2/img/icn_league_big.gif"  width="42" height="31"/><p class="league">OFFICIAL LEAGUE</p></div>
+	</a>
+	<a href="/list/mahjonglive">
+	<div class="link"><img src="/common2/img/icn_ml_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />麻雀LIVE</p></div>
+	</a>
+ 	<a href="/list/touchlive">
+	<div class="link"><img src="/common2/img/icn_tl_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />TouchLive</p></div>
+	</a>
+	<a href="/list/dartslive2">
+	<div class="link"><img src="/common2/img/icn_dl_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />DARTSLIVE2</p></div>
+	</a>
+</div>
+<br style="clear:both" />
+<div class="breadcrumb">
+<a href="/">TOP</a>
+	&nbsp;&gt;&nbsp;東京都</div>
+<div class="tabs">
+<ul class="tab">
+<li class="area-on" style="cursor:pointer;cursor:hand"><span>都道府県から検索</span></li>
+<li class="freeword-off" style="cursor:pointer;cursor:hand"><span>フリーワード検索</span></li></ul>
+
+<form name="searchform" method="post" action="/list_red.jsp">
+<div id="panel1" class="region">
+<dl class="area">
+<dt>エリアを絞る</dt>
+<dd>
+<input type="hidden" name="r1" value="%E6%9D%B1%E4%BA%AC%E9%83%BD" />
+		<select name="r2" class="pref">
+			<option value="">市区町村選択</option>
+			<option value="%E6%96%B0%E5%AE%BF%E5%8C%BA">新宿区 (51)</option><option value="%E8%B1%8A%E5%B3%B6%E5%8C%BA">豊島区 (36)</option><option value="%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA">千代田区 (34)</option><option value="%E6%B8%8B%E8%B0%B7%E5%8C%BA">渋谷区 (34)</option><option value="%E6%B8%AF%E5%8C%BA">港区 (29)</option><option value="%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA">世田谷区 (28)</option><option value="%E5%93%81%E5%B7%9D%E5%8C%BA">品川区 (21)</option><option value="%E4%B8%AD%E9%87%8E%E5%8C%BA">中野区 (21)</option><option value="%E5%A4%A7%E7%94%B0%E5%8C%BA">大田区 (20)</option><option value="%E6%9D%89%E4%B8%A6%E5%8C%BA">杉並区 (20)</option><option value="%E4%B8%AD%E5%A4%AE%E5%8C%BA">中央区 (19)</option><option value="%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA">江戸川区 (18)</option><option value="%E6%9D%BF%E6%A9%8B%E5%8C%BA">板橋区 (18)</option><option value="%E5%8F%B0%E6%9D%B1%E5%8C%BA">台東区 (16)</option><option value="%E6%B1%9F%E6%9D%B1%E5%8C%BA">江東区 (16)</option><option value="%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82">八王子市 (15)</option><option value="%E8%91%9B%E9%A3%BE%E5%8C%BA">葛飾区 (15)</option><option value="%E7%9B%AE%E9%BB%92%E5%8C%BA">目黒区 (15)</option><option value="%E7%B7%B4%E9%A6%AC%E5%8C%BA">練馬区 (14)</option><option value="%E8%B6%B3%E7%AB%8B%E5%8C%BA">足立区 (13)</option><option value="%E7%AB%8B%E5%B7%9D%E5%B8%82">立川市 (13)</option><option value="%E5%A2%A8%E7%94%B0%E5%8C%BA">墨田区 (11)</option><option value="%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82">武蔵野市 (11)</option><option value="%E7%94%BA%E7%94%B0%E5%B8%82">町田市 (11)</option><option value="%E5%BA%9C%E4%B8%AD%E5%B8%82">府中市 (11)</option><option value="%E5%8C%97%E5%8C%BA">北区 (9)</option><option value="%E8%AA%BF%E5%B8%83%E5%B8%82">調布市 (6)</option><option value="%E8%8D%92%E5%B7%9D%E5%8C%BA">荒川区 (5)</option><option value="%E5%9B%BD%E5%88%86%E5%AF%BA%E5%B8%82">国分寺市 (5)</option><option value="%E6%9D%B1%E6%9D%91%E5%B1%B1%E5%B8%82">東村山市 (4)</option><option value="%E4%B8%89%E9%B7%B9%E5%B8%82">三鷹市 (4)</option><option value="%E8%A5%BF%E6%9D%B1%E4%BA%AC%E5%B8%82">西東京市 (4)</option><option value="%E5%B0%8F%E9%87%91%E4%BA%95%E5%B8%82">小金井市 (4)</option><option value="%E6%96%87%E4%BA%AC%E5%8C%BA">文京区 (4)</option><option value="%E5%B0%8F%E5%B9%B3%E5%B8%82">小平市 (3)</option><option value="%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1">西多摩郡 (2)</option><option value="%E9%9D%92%E6%A2%85%E5%B8%82">青梅市 (2)</option><option value="%E5%A4%9A%E6%91%A9%E5%B8%82">多摩市 (2)</option><option value="%E7%BE%BD%E6%9D%91%E5%B8%82">羽村市 (2)</option><option value="%E6%9D%B1%E5%A4%A7%E5%92%8C%E5%B8%82">東大和市 (2)</option><option value="%E7%8B%9B%E6%B1%9F%E5%B8%82">狛江市 (1)</option><option value="%E6%97%A5%E9%87%8E%E5%B8%82">日野市 (1)</option><option value="%E6%98%AD%E5%B3%B6%E5%B8%82">昭島市 (1)</option><option value="%E6%9D%B1%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82">東久留米市 (1)</option><option value="%E5%9B%BD%E7%AB%8B%E5%B8%82">国立市 (1)</option><option value="%E6%B8%85%E7%80%AC%E5%B8%82">清瀬市 (1)</option><option value="%E6%AD%A6%E8%94%B5%E6%9D%91%E5%B1%B1%E5%B8%82">武蔵村山市 (1)</option></select>
+	</dd>
+</dl>
+
+<dl class="condition">
+<dt>条件を絞る</dt>
+<dd class="row01"><input type="checkbox" name="n10" value="1"  /> DARTSLIVE 10台以上</dd>
+<dd class="row03"><input type="checkbox" name="n5" value="1"  /> DARTSLIVE 5台以上</dd>
+<dd class="row01"><input type="checkbox" name="dl2" value="1"  /> DARTSLIVE2設置</dd>
+<dd class="row02"><input type="checkbox" name="tl" value="1"  /> TouchLive設置</dd>
+<dd class="row02"><input type="checkbox" name="ml" value="1"  /> 麻雀LIVE設置</dd>
+<dd class="row04"><input type="checkbox" name="leg" value="1"  /> OFFICIAL LEAGUE</dd>
+<!-- / .condition --></dl>
+<p class="btn-return"><a href="/">一つ前のエリアに戻る</a></p>
+<div class="btn-search"><a href="javascript:document.searchform.submit();">検索する</a></div>
+<!-- / .region --></div>
+</form>
+<form name="searchform2" method="post" action="/list_red.jsp" onSubmit="return chk2('検索語句を半角スペースで区切って入力してください','検索語句を入力して再度検索をしてください。')">
+<div id="panel2" class="freewordSearch panel">
+<dl class="area">
+<dt>フリーワードを入力</dt>
+<dd><input type="text" title="検索語句を半角スペースで区切って入力してください" size="65" name="q" id="freeword" class="tagged" value="" /></dd>
+</dl>
+
+<dl class="condition">
+<dt>条件を絞る</dt>
+<dd class="row01"><input type="checkbox" name="n10" value="1"  /> DARTSLIVE 10台以上</dd>
+<dd class="row03"><input type="checkbox" name="n5" value="1"  /> DARTSLIVE 5台以上</dd>
+<dd class="row01"><input type="checkbox" name="dl2" value="1"  /> DARTSLIVE2設置</dd>
+<dd class="row02"><input type="checkbox" name="tl" value="1"  /> TouchLive設置</dd>
+<dd class="row02"><input type="checkbox" name="ml" value="1"  /> 麻雀LIVE設置</dd>
+<dd class="row04"><input type="checkbox" name="leg" value="1"  /> OFFICIAL LEAGUE</dd>
+<!-- / .condition --></dl>
+<div class="btn-search"><a href="#" onClick="return chk2('検索語句を半角スペースで区切って入力してください','検索語句を入力して再度検索をしてください。');">検索する</a></div>
+<!-- / .region --></div>
+</form>
+</div>
+<div id="seach_alert"></div>
+
+<div class="mainContents-nb">
+	<h2 class="region-ttl">東京都&nbsp;&nbsp;</h2><div class="searchBlck">
+<p class="search-rslt">検索結果 <span class="number">575</span> 件</p>
+
+<div class="searhBlck-pager">
+<ul>
+<li class="first"><a href="?p=0">最初へ</a></li>
+<li class="prev"><a href="?p=13">前へ</a></li>
+<li class="no"><a href="?p=10">11</a></li>
+<li class="no"><a href="?p=11">12</a></li>
+<li class="no"><a href="?p=12">13</a></li>
+<li class="no"><a href="?p=13">14</a></li>
+<li class="on">15</li>
+<li class="no"><a href="?p=15">16</a></li>
+<li class="no"><a href="?p=16">17</a></li>
+<li class="no"><a href="?p=17">18</a></li>
+<li class="no"><a href="?p=18">19</a></li>
+<li class="no"><a href="?p=19">20</a></li>
+<li class="next"><a href="?p=15">次へ</a></li>
+<li class="last"><a href="?p=28">最後へ</a></li>
+</ul>
+<!-- / .searhBlck-pager --></div>
+<!-- / .searchBlck --></div>
+
+<div class="searchList2">
+<table width="890" border="0" cellspacing="0" cellpadding="0">
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/83a192289c7f71c8b21333aee1bd51e4">Cross Design Creation</a></p>
+	  <ul>
+		<li class="address">東京都千代田区神田佐久間町3-29</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5809-2977</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=83a192289c7f71c8b21333aee1bd51e4" onClick="window.open('/printmap.jsp?si=83a192289c7f71c8b21333aee1bd51e4','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/69ef6ce963b357c40d9b047a20a7ba1e">タイトーイン神田</a></p>
+	  <ul>
+		<li class="address">東京都千代田区鍛冶町2-1-4</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5296-4200</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=69ef6ce963b357c40d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=69ef6ce963b357c40d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/eded5c2fbcc956b70d9b047a20a7ba1e">Player's Bar Fellows</a></p>
+	  <ul>
+		<li class="address">東京都千代田区九段南4-6-10 近清堂ビル3F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3234-4771</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=eded5c2fbcc956b70d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=eded5c2fbcc956b70d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/3a8c6d5dd406355e0d9b047a20a7ba1e">OASIS BAR 人形町店</a></p>
+	  <ul>
+		<li class="address">東京都中央区日本橋人形町2-2-4 藤井ビル2F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5640-8140</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=3a8c6d5dd406355e0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=3a8c6d5dd406355e0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/5ba31aa45db14cd60d9b047a20a7ba1e">BAGUS GOLKA-バグースゴルカ</a></p>
+	  <ul>
+		<li class="address">東京都中央区銀座8-10-17 銀座サザンビル4F～6Ｆ</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5537-3394</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=5ba31aa45db14cd60d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=5ba31aa45db14cd60d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/1cca150e61a6a6e20d9b047a20a7ba1e">メイドダーツバー PHI</a></p>
+	  <ul>
+		<li class="address">東京都中央区銀座6-4-8 ニュー銀座ビル3号館8F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5159-8324</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=1cca150e61a6a6e20d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=1cca150e61a6a6e20d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/bbc61231076e9b73774c926eb736cb5a">GASOLINE HOUSE新橋</a></p>
+	  <ul>
+		<li class="address">東京都港区新橋4-5-15 新橋新和ビルB1F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3433-2048</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=bbc61231076e9b73774c926eb736cb5a" onClick="window.open('/printmap.jsp?si=bbc61231076e9b73774c926eb736cb5a','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/62e319f7388ed96b0d9b047a20a7ba1e">Darts&Amuse INGz</a></p>
+	  <ul>
+		<li class="address">東京都港区西麻布2-25-23 バルビゾン27-10F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel"></li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=62e319f7388ed96b0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=62e319f7388ed96b0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/afedc3a7ee3c4dda0d9b047a20a7ba1e">ﾛｽｶﾎﾞｽ六本木店</a></p>
+	  <ul>
+		<li class="address">東京都港区六本木5-16-3 パセラリゾーツBF</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">0120-683-943</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=afedc3a7ee3c4dda0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=afedc3a7ee3c4dda0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/ea8dabfb91b03d96790ab824ce8730e5">ダーツカフェLOOP+赤坂店</a></p>
+	  <ul>
+		<li class="address">東京都港区赤坂3-21-10 赤坂青明会館4F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel"></li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=ea8dabfb91b03d96790ab824ce8730e5" onClick="window.open('/printmap.jsp?si=ea8dabfb91b03d96790ab824ce8730e5','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/46dce87727d4d5ee0d9b047a20a7ba1e">スポーツカフェ　B&D</a></p>
+	  <ul>
+		<li class="address">東京都台東区根岸1-1-16 銀星ビル3Ｆ</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3874-2278</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=46dce87727d4d5ee0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=46dce87727d4d5ee0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/15a31fcad53ee7e70d9b047a20a7ba1e">カラオケBANBAN 町屋店</a></p>
+	  <ul>
+		<li class="address">東京都荒川区町屋2-2-6 下田産業町屋第2ビル2階</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-6423-8016</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=15a31fcad53ee7e70d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=15a31fcad53ee7e70d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/a94b50e5ed66bc450d9b047a20a7ba1e">自遊空間 南千住店</a></p>
+	  <ul>
+		<li class="address">東京都荒川区南千住4-7-1 BiVi南千住2F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5604-1505</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=a94b50e5ed66bc450d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=a94b50e5ed66bc450d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/554e60983a9f896d0d9b047a20a7ba1e">アクアリウム</a></p>
+	  <ul>
+		<li class="address">東京都荒川区東日暮里5-50-11 ザオービル3Ｆ</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3806-1645</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=554e60983a9f896d0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=554e60983a9f896d0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/427be765f6370f1f0d9b047a20a7ba1e">GROVE 北千住店</a></p>
+	  <ul>
+		<li class="address">東京都足立区千住3-33-3 そのうビル2F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3882-7891</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=427be765f6370f1f0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=427be765f6370f1f0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/4572c571de01d15d0d9b047a20a7ba1e">BARREL 梅島店</a></p>
+	  <ul>
+		<li class="address">東京都足立区梅島1-12-3-3F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5888-5170</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=4572c571de01d15d0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=4572c571de01d15d0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/bffb443a97b78a350d9b047a20a7ba1e">仏蘭西矢・新小岩店</a></p>
+	  <ul>
+		<li class="address">東京都葛飾区新小岩2-7-4-2F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3653-0117</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=bffb443a97b78a350d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=bffb443a97b78a350d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/a93648b0a723873ef454cb89828a1cfe">-ONE-金町 390円Bar</a></p>
+	  <ul>
+		<li class="address">東京都葛飾区東金町1-18-6 齊藤ホワイトビル1階</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5876-3371</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=a93648b0a723873ef454cb89828a1cfe" onClick="window.open('/printmap.jsp?si=a93648b0a723873ef454cb89828a1cfe','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/14245ddb1620f6240d9b047a20a7ba1e">grooove 金町店</a></p>
+	  <ul>
+		<li class="address">東京都葛飾区東金町1-42-5 豊勢ビル4F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5876-5419</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=14245ddb1620f6240d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=14245ddb1620f6240d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="even">
+	<td class="info-txt">
+	  <p><a href="/shop/04b3d299f8667f430d9b047a20a7ba1e">だーつとかふぇの店　イワオ</a></p>
+	  <ul>
+		<li class="address">東京都葛飾区青戸1-9-23 ジュネパレス葛飾第1ビルB1F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3695-5122</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=04b3d299f8667f430d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=04b3d299f8667f430d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+</table>
+<!--//日本-->
+
+<!-- / .serachList2 --></div>
+
+
+
+
+<div class="searhBlck-pager2">
+<ul>
+<li class="first"><a href="?p=0">最初へ</a></li>
+<li class="prev"><a href="?p=13">前へ</a></li>
+<li class="no"><a href="?p=10">11</a></li>
+<li class="no"><a href="?p=11">12</a></li>
+<li class="no"><a href="?p=12">13</a></li>
+<li class="no"><a href="?p=13">14</a></li>
+<li class="on">15</li>
+<li class="no"><a href="?p=15">16</a></li>
+<li class="no"><a href="?p=16">17</a></li>
+<li class="no"><a href="?p=17">18</a></li>
+<li class="no"><a href="?p=18">19</a></li>
+<li class="no"><a href="?p=19">20</a></li>
+<li class="next"><a href="?p=15">次へ</a></li>
+<li class="last"><a href="?p=28">最後へ</a></li>
+</ul>
+<!-- / .searhBlck-pager --></div>
+
+<!-- / .mainContents --></div>
+
+
+
+<div class="adarea">
+<ul class="list_2">
+<li>
+<a href="http://www.dartslive.com/jp/event/cp_moteki/" target="_blank" onClick="_gaq.push(['_trackEvent', 'underbnr', 'bnr1']);">
+<img src="http://search.dartslive.jp/common/bnr/jp/5428.jpg" alt="" width="287" height="62" /></a>
+</li>
+<li>
+<a href="http://www.dartslive.com/jp/news/tl/entry21204.html" target="_blank" onClick="_gaq.push(['_trackEvent', 'underbnr', 'bnr2']);">
+<img src="http://search.dartslive.jp/common/bnr/jp/5506.jpg" alt="" width="287" height="62" /></a>
+</li>
+</ul>
+</div>
+<!-- / .inner --></div>
+<span class="cnt-btm"><img src="/common2/img/bg_contents_btm.png" width="959" height="15" /></span>
+
+
+
+
+<!-- / #contents --></div>
+
+
+
+<!--==================================================================
+ //contents_jp
+==================================================================-->
+<!--footer includeファイル-->
+
+<br />
+<!--==================================================================
+ footer
+==================================================================-->
+
+<div id="footer" class="cmn_cl">
+<div class="inner">
+<p class="copyright">Copyright &copy; DARTSLIVE Co.,Ltd. All rights reserved.</p>
+</div>
+</div>
+<!--==================================================================
+ //footer
+==================================================================-->
+</div>
+<!--==================================================================
+ //container
+==================================================================-->
+
+
+</div>
+<!--==================================================================
+ //wrapper
+==================================================================-->
+
+
+<!-- google -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12103462-24']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- //google -->
+<!-- Universal Analytice -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-60362400-4', 'auto');
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', 'jp');
+ga('set', 'dimension2', 'pc');
+ga('send', 'pageview');
+</script>
+<!-- //Universal Analytice -->
+</body>
+</html>

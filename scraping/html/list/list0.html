@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ダーツバー検索　DARTSLIVE SEARCH</title>
+
+<!--====================== meta ======================-->
+<meta name="keywords" content='dartslive,ダーツライブ,darts bar search,ダーツ,ダーツバー,検索,ダーツショップ,DARSLIVE2,TouchLive,ゲームセンター,マンガ喫茶' />
+<meta name="description" content="全国のDARTSLIVE設置店検索サイト。ダーツバー、ダーツショップ検索。DARTSLIVE DARTS BAR SEARCH.DARTSLIVE,DARSLIVE2,TouchLive等" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!--====================== common style ======================-->
+<!-- stylesheet -->
+<link rel="shortcut icon" href="/common2/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/common2/img/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" media="handheld" href="http://www.dartslive.jp/k/" />
+
+<link rel="stylesheet" type="text/css" href="/common2/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/common2/css/search.css" />
+<link rel="stylesheet" type="text/css" href="/common2/css/thickbox.css" />
+<script type="text/javascript" src="/common2/js/jquery.min.js"></script>
+<script type="text/javascript" src="/common2/js/rollover.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.fieldtag.js"></script>
+<script type="text/javascript">/* <![CDATA[ */
+$(function(){
+  $("#freeword").fieldtag();
+});
+/* ]]> */</script>
+<script type="text/javascript" src="/common2/js/bypage/pc/index.js"></script>
+<script type="text/javascript" src="/common2/js/thickbox.js"></script>
+<script src="/common2/js/iepngfix_tilebg.js" type="text/javascript"></script>
+</head>
+
+<body id="top">
+<a name="pagetop" id="pagetop"></a>
+
+<!--==================================================================
+ wrapper
+==================================================================-->
+<div id="wrapper">
+<!--==================================================================
+ container
+==================================================================-->
+<div id="container">
+
+
+<!--==================================================================
+ header
+==================================================================-->
+<div id="header" class="png_bg">
+<p class="lead-txt">ダーツバー検索　DARTSLIVE SEARCH</p>
+<div class="dl-logo"><a href="http://www.dartslive.com/jp/" target="_blank"><img src="/common2/img/dl_logo.gif" alt="DARTSLIVE" width="119" height="27" /></a></div>
+<div class="btn-region png_bg"><a href="/country.jsp?TB_iframe=true&width=615&height=390" class="thickbox png_bg">他の国・地域を選択してください</a></div>
+<h1 class="logo"><a href="/" ><img src="/common2/img/logo.png" alt="DARTSLIVE SEARCH" width="236" height="74" border="0" /></a></h1>
+<div class="region-txt">日本</div>
+<p>&nbsp;</p>
+</div>
+<!--==================================================================
+ //header
+==================================================================-->
+<!--==================================================================
+ contents_jp
+==================================================================-->
+
+
+<div id="contents">
+<span class="cnt-head"><img src="/common2/img/bg_contents_top.png" width="959" height="10" /></span>
+<div class="inner png_bg">
+<div id="minignav" class="clfx">
+<a href="/list/league">
+	<div class="link"><img src="/common2/img/icn_league_big.gif"  width="42" height="31"/><p class="league">OFFICIAL LEAGUE</p></div>
+	</a>
+	<a href="/list/mahjonglive">
+	<div class="link"><img src="/common2/img/icn_ml_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />麻雀LIVE</p></div>
+	</a>
+ 	<a href="/list/touchlive">
+	<div class="link"><img src="/common2/img/icn_tl_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />TouchLive</p></div>
+	</a>
+	<a href="/list/dartslive2">
+	<div class="link"><img src="/common2/img/icn_dl_big.gif" width="42" height="31" /><p><img src="/common2/img/arrow02.gif" />DARTSLIVE2</p></div>
+	</a>
+</div>
+<br style="clear:both" />
+<div class="breadcrumb">
+<a href="/">TOP</a>
+	&nbsp;&gt;&nbsp;東京都</div>
+<div class="tabs">
+<ul class="tab">
+<li class="area-on" style="cursor:pointer;cursor:hand"><span>都道府県から検索</span></li>
+<li class="freeword-off" style="cursor:pointer;cursor:hand"><span>フリーワード検索</span></li></ul>
+
+<form name="searchform" method="post" action="/list_red.jsp">
+<div id="panel1" class="region">
+<dl class="area">
+<dt>エリアを絞る</dt>
+<dd>
+<input type="hidden" name="r1" value="%E6%9D%B1%E4%BA%AC%E9%83%BD" />
+		<select name="r2" class="pref">
+			<option value="">市区町村選択</option>
+			<option value="%E6%96%B0%E5%AE%BF%E5%8C%BA">新宿区 (51)</option><option value="%E8%B1%8A%E5%B3%B6%E5%8C%BA">豊島区 (36)</option><option value="%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA">千代田区 (34)</option><option value="%E6%B8%8B%E8%B0%B7%E5%8C%BA">渋谷区 (34)</option><option value="%E6%B8%AF%E5%8C%BA">港区 (29)</option><option value="%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA">世田谷区 (28)</option><option value="%E5%93%81%E5%B7%9D%E5%8C%BA">品川区 (21)</option><option value="%E4%B8%AD%E9%87%8E%E5%8C%BA">中野区 (21)</option><option value="%E5%A4%A7%E7%94%B0%E5%8C%BA">大田区 (20)</option><option value="%E6%9D%89%E4%B8%A6%E5%8C%BA">杉並区 (20)</option><option value="%E4%B8%AD%E5%A4%AE%E5%8C%BA">中央区 (19)</option><option value="%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%8C%BA">江戸川区 (18)</option><option value="%E6%9D%BF%E6%A9%8B%E5%8C%BA">板橋区 (18)</option><option value="%E5%8F%B0%E6%9D%B1%E5%8C%BA">台東区 (16)</option><option value="%E6%B1%9F%E6%9D%B1%E5%8C%BA">江東区 (16)</option><option value="%E5%85%AB%E7%8E%8B%E5%AD%90%E5%B8%82">八王子市 (15)</option><option value="%E8%91%9B%E9%A3%BE%E5%8C%BA">葛飾区 (15)</option><option value="%E7%9B%AE%E9%BB%92%E5%8C%BA">目黒区 (15)</option><option value="%E7%B7%B4%E9%A6%AC%E5%8C%BA">練馬区 (14)</option><option value="%E8%B6%B3%E7%AB%8B%E5%8C%BA">足立区 (13)</option><option value="%E7%AB%8B%E5%B7%9D%E5%B8%82">立川市 (13)</option><option value="%E5%A2%A8%E7%94%B0%E5%8C%BA">墨田区 (11)</option><option value="%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82">武蔵野市 (11)</option><option value="%E7%94%BA%E7%94%B0%E5%B8%82">町田市 (11)</option><option value="%E5%BA%9C%E4%B8%AD%E5%B8%82">府中市 (11)</option><option value="%E5%8C%97%E5%8C%BA">北区 (9)</option><option value="%E8%AA%BF%E5%B8%83%E5%B8%82">調布市 (6)</option><option value="%E8%8D%92%E5%B7%9D%E5%8C%BA">荒川区 (5)</option><option value="%E5%9B%BD%E5%88%86%E5%AF%BA%E5%B8%82">国分寺市 (5)</option><option value="%E6%9D%B1%E6%9D%91%E5%B1%B1%E5%B8%82">東村山市 (4)</option><option value="%E4%B8%89%E9%B7%B9%E5%B8%82">三鷹市 (4)</option><option value="%E8%A5%BF%E6%9D%B1%E4%BA%AC%E5%B8%82">西東京市 (4)</option><option value="%E5%B0%8F%E9%87%91%E4%BA%95%E5%B8%82">小金井市 (4)</option><option value="%E6%96%87%E4%BA%AC%E5%8C%BA">文京区 (4)</option><option value="%E5%B0%8F%E5%B9%B3%E5%B8%82">小平市 (3)</option><option value="%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1">西多摩郡 (2)</option><option value="%E9%9D%92%E6%A2%85%E5%B8%82">青梅市 (2)</option><option value="%E5%A4%9A%E6%91%A9%E5%B8%82">多摩市 (2)</option><option value="%E7%BE%BD%E6%9D%91%E5%B8%82">羽村市 (2)</option><option value="%E6%9D%B1%E5%A4%A7%E5%92%8C%E5%B8%82">東大和市 (2)</option><option value="%E7%8B%9B%E6%B1%9F%E5%B8%82">狛江市 (1)</option><option value="%E6%97%A5%E9%87%8E%E5%B8%82">日野市 (1)</option><option value="%E6%98%AD%E5%B3%B6%E5%B8%82">昭島市 (1)</option><option value="%E6%9D%B1%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82">東久留米市 (1)</option><option value="%E5%9B%BD%E7%AB%8B%E5%B8%82">国立市 (1)</option><option value="%E6%B8%85%E7%80%AC%E5%B8%82">清瀬市 (1)</option><option value="%E6%AD%A6%E8%94%B5%E6%9D%91%E5%B1%B1%E5%B8%82">武蔵村山市 (1)</option></select>
+	</dd>
+</dl>
+
+<dl class="condition">
+<dt>条件を絞る</dt>
+<dd class="row01"><input type="checkbox" name="n10" value="1"  /> DARTSLIVE 10台以上</dd>
+<dd class="row03"><input type="checkbox" name="n5" value="1"  /> DARTSLIVE 5台以上</dd>
+<dd class="row01"><input type="checkbox" name="dl2" value="1"  /> DARTSLIVE2設置</dd>
+<dd class="row02"><input type="checkbox" name="tl" value="1"  /> TouchLive設置</dd>
+<dd class="row02"><input type="checkbox" name="ml" value="1"  /> 麻雀LIVE設置</dd>
+<dd class="row04"><input type="checkbox" name="leg" value="1"  /> OFFICIAL LEAGUE</dd>
+<!-- / .condition --></dl>
+<p class="btn-return"><a href="/">一つ前のエリアに戻る</a></p>
+<div class="btn-search"><a href="javascript:document.searchform.submit();">検索する</a></div>
+<!-- / .region --></div>
+</form>
+<form name="searchform2" method="post" action="/list_red.jsp" onSubmit="return chk2('検索語句を半角スペースで区切って入力してください','検索語句を入力して再度検索をしてください。')">
+<div id="panel2" class="freewordSearch panel">
+<dl class="area">
+<dt>フリーワードを入力</dt>
+<dd><input type="text" title="検索語句を半角スペースで区切って入力してください" size="65" name="q" id="freeword" class="tagged" value="" /></dd>
+</dl>
+
+<dl class="condition">
+<dt>条件を絞る</dt>
+<dd class="row01"><input type="checkbox" name="n10" value="1"  /> DARTSLIVE 10台以上</dd>
+<dd class="row03"><input type="checkbox" name="n5" value="1"  /> DARTSLIVE 5台以上</dd>
+<dd class="row01"><input type="checkbox" name="dl2" value="1"  /> DARTSLIVE2設置</dd>
+<dd class="row02"><input type="checkbox" name="tl" value="1"  /> TouchLive設置</dd>
+<dd class="row02"><input type="checkbox" name="ml" value="1"  /> 麻雀LIVE設置</dd>
+<dd class="row04"><input type="checkbox" name="leg" value="1"  /> OFFICIAL LEAGUE</dd>
+<!-- / .condition --></dl>
+<div class="btn-search"><a href="#" onClick="return chk2('検索語句を半角スペースで区切って入力してください','検索語句を入力して再度検索をしてください。');">検索する</a></div>
+<!-- / .region --></div>
+</form>
+</div>
+<div id="seach_alert"></div>
+
+<div class="mainContents-nb">
+	<h2 class="region-ttl">東京都&nbsp;&nbsp;</h2><div class="searchBlck">
+<p class="search-rslt">検索結果 <span class="number">575</span> 件</p>
+
+<div class="searhBlck-pager">
+<ul>
+<li class="on">1</li>
+<li class="no"><a href="?p=1">2</a></li>
+<li class="no"><a href="?p=2">3</a></li>
+<li class="no"><a href="?p=3">4</a></li>
+<li class="no"><a href="?p=4">5</a></li>
+<li class="no"><a href="?p=5">6</a></li>
+<li class="no"><a href="?p=6">7</a></li>
+<li class="no"><a href="?p=7">8</a></li>
+<li class="no"><a href="?p=8">9</a></li>
+<li class="no"><a href="?p=9">10</a></li>
+<li class="next"><a href="?p=1">次へ</a></li>
+<li class="last"><a href="?p=28">最後へ</a></li>
+</ul>
+<!-- / .searhBlck-pager --></div>
+<!-- / .searchBlck --></div>
+
+<div class="searchList2">
+<table width="890" border="0" cellspacing="0" cellpadding="0">
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/d6529ee695db4afc0d9b047a20a7ba1e">サンパークダーツ中央口店</a></p>
+	  <ul>
+		<li class="address">東京都新宿区新宿3-26-2 サンパークビル3F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3352-2254</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=d6529ee695db4afc0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=d6529ee695db4afc0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/2a3e3c17edc2bd910d9b047a20a7ba1e">BAGUS-バグース-道玄坂</a></p>
+	  <ul>
+		<li class="address">東京都渋谷区道玄坂2-29-5 ザ・プライム3F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3463-6669</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=2a3e3c17edc2bd910d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=2a3e3c17edc2bd910d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/ccd5de150432ed600d9b047a20a7ba1e">BAGUS-バグース- 池袋西口</a></p>
+	  <ul>
+		<li class="address">東京都豊島区西池袋1-33-2-2F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5957-7667</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=ccd5de150432ed600d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=ccd5de150432ed600d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/419aae979c4a9d400d9b047a20a7ba1e">サンパーク　ダーツ　本館</a></p>
+	  <ul>
+		<li class="address">東京都新宿区新宿3-22-12 サンパークビル4Ｆ</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3354-3199</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=419aae979c4a9d400d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=419aae979c4a9d400d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/e296fdfacc8a73500d9b047a20a7ba1e">BAGUS-バグース-秋葉原</a></p>
+	  <ul>
+		<li class="address">東京都千代田区外神田3-15-1 AKIBA PLACE5F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5298-1140</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=e296fdfacc8a73500d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=e296fdfacc8a73500d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/1ba62343a6e2fc2e0d9b047a20a7ba1e">キャノンボール大森店</a></p>
+	  <ul>
+		<li class="address">東京都大田区山王2-4-1 大森駅前ビル5F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3774-4555</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=1ba62343a6e2fc2e0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=1ba62343a6e2fc2e0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/ac85362bc071359b0d9b047a20a7ba1e">BAGUS-バグース-新宿</a></p>
+	  <ul>
+		<li class="address">東京都新宿区歌舞伎町1-20-1 ヒューマックスパビリオン5F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3208-0127</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=ac85362bc071359b0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=ac85362bc071359b0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/2ef5f1e9e89902b40d9b047a20a7ba1e">BAGUS-バグース-靖国通り</a></p>
+	  <ul>
+		<li class="address">東京都新宿区新宿3-15-11 アドホック新宿ビルB1F・B2F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5360-1191</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=2ef5f1e9e89902b40d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=2ef5f1e9e89902b40d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/2a15ab958e1714b00d9b047a20a7ba1e">BAGUS-バグース-吉祥寺</a></p>
+	  <ul>
+		<li class="address">東京都武蔵野市吉祥寺本町1-9-10 吉祥寺ファミリープラザ4F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">0422-20-3900</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=2a15ab958e1714b00d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=2a15ab958e1714b00d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/07e44c26c4deb8c7fec1ae84bb28bd87">UP秋葉原</a></p>
+	  <ul>
+		<li class="address">東京都千代田区神田佐久間町1-15 川初ビル9F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3525-4289</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=07e44c26c4deb8c7fec1ae84bb28bd87" onClick="window.open('/printmap.jsp?si=07e44c26c4deb8c7fec1ae84bb28bd87','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/93f4aa033a6b24240d9b047a20a7ba1e">BAGUS-バグース-渋谷</a></p>
+	  <ul>
+		<li class="address">東京都渋谷区宇田川町26-3 サンルイビル4F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5459-2092</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=93f4aa033a6b24240d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=93f4aa033a6b24240d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/dc8a86481375284c0d9b047a20a7ba1e">Bee SHIBUYA</a></p>
+	  <ul>
+		<li class="address">東京都渋谷区道玄坂2-6-16 井門道玄坂ビル8F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5458-2203</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=dc8a86481375284c0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=dc8a86481375284c0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/de1891ee9e77790b0d9b047a20a7ba1e">グランサイバーカフェ バグース 池袋</a></p>
+	  <ul>
+		<li class="address">東京都豊島区東池袋1-22-10 ヒューマックスパビリオン4F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5956-5885</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=de1891ee9e77790b0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=de1891ee9e77790b0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/0df250fa3989d05d0d9b047a20a7ba1e">BAGUS-バグース-町田東口</a></p>
+	  <ul>
+		<li class="address">東京都町田市原町田6-13-17 アーバンミサワビル5F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">042-739-7120</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		<li><img src="/common2/img/icn_league_s.gif" width="20" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=0df250fa3989d05d0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=0df250fa3989d05d0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/987a7aa231fa38050d9b047a20a7ba1e">BAGUS -バグース- 六本木</a></p>
+	  <ul>
+		<li class="address">東京都港区六本木5-5-1 ロアビル3F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3478-9998</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=987a7aa231fa38050d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=987a7aa231fa38050d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/7ad5be351e9b3da80d9b047a20a7ba1e">バグース錦糸町</a></p>
+	  <ul>
+		<li class="address">東京都墨田区江東橋2-21-6 テルミナ3-3F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5625-4191</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=7ad5be351e9b3da80d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=7ad5be351e9b3da80d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/1b31cf744bb7dd590d9b047a20a7ba1e">ポイント蒲田店</a></p>
+	  <ul>
+		<li class="address">東京都大田区西蒲田8-1-7 グランタウンビルB1F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-3739-0999</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=1b31cf744bb7dd590d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=1b31cf744bb7dd590d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/42406eaf97d3b9310d9b047a20a7ba1e">ポイントサンビリ荻窪西口店</a></p>
+	  <ul>
+		<li class="address">東京都杉並区上荻1-16-16 ユアビル7F</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5349-8303</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=42406eaf97d3b9310d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=42406eaf97d3b9310d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/a3b27f82de624676f454cb89828a1cfe">東京レジャーランド秋葉原店</a></p>
+	  <ul>
+		<li class="address">東京都千代田区外神田1-9-5</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5298-1360</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=a3b27f82de624676f454cb89828a1cfe" onClick="window.open('/printmap.jsp?si=a3b27f82de624676f454cb89828a1cfe','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+<tr class="odd">
+	<td class="info-txt">
+	  <p><a href="/shop/45b37c620a54704f0d9b047a20a7ba1e">ウェアハウス入谷店</a></p>
+	  <ul>
+		<li class="address">東京都足立区入谷7-8-14</li>
+		<li class="img"><img src="/common2/img/border_dot_hori.png" width="5" height="19" alt="dot" /></li>
+		<li class="tel">03-5839-8208</li>
+		</ul>
+	  </td>
+	<td class="shp-type">
+	  <ul><li><img src="/common2/img/icn_plus10.gif" width="54" height="19" /></li>
+		<li><img src="/common2/img/icn_live2s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_touch_s.gif" width="20" height="19" /></li>
+		<li><img src="/common2/img/icn_mahjong_s.gif" width="19" height="19" /></li>
+		</ul>
+  </td>
+	<td class="map"><a href="/printmap.jsp?si=45b37c620a54704f0d9b047a20a7ba1e" onClick="window.open('/printmap.jsp?si=45b37c620a54704f0d9b047a20a7ba1e','win','width=680,height=750,menubar=yes,status=yes,scrollbars=yes') ; return false ;"><img class="imgover" src="/common2/img/btn_map.png" width="79" height="30" alt="map" /></a></td>
+	<!-- / .even --></tr>
+</table>
+<!--//日本-->
+
+<!-- / .serachList2 --></div>
+
+
+
+
+<div class="searhBlck-pager2">
+<ul>
+<li class="on">1</li>
+<li class="no"><a href="?p=1">2</a></li>
+<li class="no"><a href="?p=2">3</a></li>
+<li class="no"><a href="?p=3">4</a></li>
+<li class="no"><a href="?p=4">5</a></li>
+<li class="no"><a href="?p=5">6</a></li>
+<li class="no"><a href="?p=6">7</a></li>
+<li class="no"><a href="?p=7">8</a></li>
+<li class="no"><a href="?p=8">9</a></li>
+<li class="no"><a href="?p=9">10</a></li>
+<li class="next"><a href="?p=1">次へ</a></li>
+<li class="last"><a href="?p=28">最後へ</a></li>
+</ul>
+<!-- / .searhBlck-pager --></div>
+
+<!-- / .mainContents --></div>
+
+
+
+<div class="adarea">
+<ul class="list_2">
+<li>
+<a href="http://www.dartslive.com/jp/event/cp_moteki/" target="_blank" onClick="_gaq.push(['_trackEvent', 'underbnr', 'bnr1']);">
+<img src="http://search.dartslive.jp/common/bnr/jp/5428.jpg" alt="" width="287" height="62" /></a>
+</li>
+<li>
+<a href="http://www.dartslive.com/jp/news/tl/entry21204.html" target="_blank" onClick="_gaq.push(['_trackEvent', 'underbnr', 'bnr2']);">
+<img src="http://search.dartslive.jp/common/bnr/jp/5506.jpg" alt="" width="287" height="62" /></a>
+</li>
+</ul>
+</div>
+<!-- / .inner --></div>
+<span class="cnt-btm"><img src="/common2/img/bg_contents_btm.png" width="959" height="15" /></span>
+
+
+
+
+<!-- / #contents --></div>
+
+
+
+<!--==================================================================
+ //contents_jp
+==================================================================-->
+<!--footer includeファイル-->
+
+<br />
+<!--==================================================================
+ footer
+==================================================================-->
+
+<div id="footer" class="cmn_cl">
+<div class="inner">
+<p class="copyright">Copyright &copy; DARTSLIVE Co.,Ltd. All rights reserved.</p>
+</div>
+</div>
+<!--==================================================================
+ //footer
+==================================================================-->
+</div>
+<!--==================================================================
+ //container
+==================================================================-->
+
+
+</div>
+<!--==================================================================
+ //wrapper
+==================================================================-->
+
+
+<!-- google -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12103462-24']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- //google -->
+<!-- Universal Analytice -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-60362400-4', 'auto');
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', 'jp');
+ga('set', 'dimension2', 'pc');
+ga('send', 'pageview');
+</script>
+<!-- //Universal Analytice -->
+</body>
+</html>
