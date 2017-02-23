@@ -23,8 +23,9 @@ for k, j in enumerate(jsonData):
                 else:
                     for i in range(1, 20):
                         address = j['address'][:-i]
-                        ret = geocoder.google(address)
+                        ret = geocoder.google(address).latlng
                         print(ret)
+                        print(i)
                         if ret:
                             jsonData[k]['latitude'], jsonData[k]['longitude'] = ret
                             break

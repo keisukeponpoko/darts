@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from shop.models import Darts
 from django.http import HttpResponse
-import json
+from django.core import serializers
+import json, decimal
 import os.path
 
 # Create your views here.
@@ -27,3 +28,21 @@ def insert(self):
         shop.save()
 
     return HttpResponse('ok')
+
+def map(request):
+    return render(request, 'map.html')
+
+def getShop(request):
+    from django.http import HttpResponse,Http404
+
+    data = json.dumps(list(Darts.objects.values_list('latitude', 'longitude', 'name', 'id')), default=decimal_default)
+    return HttpResponse(data)
+
+def showShop(request, shop_id):
+    shopData = Darts.objects.filter(id = shop_id).first()
+    return render(request, 'detail.html', {'shopData' : shopData})
+
+def decimal_default(obj):
+    if isinstance(obj, decimal.Decimal):
+        return float(obj)
+    raise TypeError

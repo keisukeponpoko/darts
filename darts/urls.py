@@ -18,6 +18,9 @@ from django.contrib import admin
 from shop import views
 
 urlpatterns = [
+    url(r'^$', views.map),
     url(r'^admin/', admin.site.urls),
     url(r'^insert/json$', views.insert),
+    url(r'^shop/get$', views.getShop),
+    url(r'^shop/(?P<shop_id>[0-9]+)$', views.showShop),
 ]
