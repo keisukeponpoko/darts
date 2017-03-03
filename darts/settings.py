@@ -74,15 +74,26 @@ WSGI_APPLICATION = 'darts.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
+# 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'shop',
+#         'USER': 'kei',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+# 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'shop',
-        'USER': 'kei',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'darts',
+        'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': '',
+        'PORT': '',
     }
 }
 

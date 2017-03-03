@@ -9,7 +9,7 @@ django-toolbelt==0.0.1
 geocoder==1.20.1
 gunicorn==19.6.0
 packaging==16.8
-psycopg2==2.6.2
+psycopg2==2.7
 pyparsing==2.1.10
 ratelim==0.1.6
 requests==2.13.0
