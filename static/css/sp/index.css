@@ -1,0 +1,137 @@
+.banner {
+  background: #ed6103;
+  position: relative;
+  width: 100%;
+  height: 55rem;
+  overflow: hidden;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-align: right;
+  padding: 1rem;
+  font-size: 4rem;
+  font-family: Impact;
+  letter-spacing: 0.2rem;
+}
+
+.banner .diamond {
+  position: absolute;
+  margin: auto;
+  background: #fff;
+  text-align: center;
+  color: #061e56;
+}
+
+.banner .diamond p span.icon {
+  display: block;
+}
+
+.banner .diamond.area {
+  top: 10rem;
+  left: -2rem;
+  border-radius: 11rem;
+  width: 22rem;
+  height: 22rem;
+}
+
+.banner .diamond.area p {
+  font-size: 2rem;
+}
+.banner .diamond.area p span.icon {
+  margin: 5.5rem 0 0;
+  font-size: 8rem;
+}
+
+.banner .diamond.map {
+  top: 28rem;
+  right: -2rem;
+  border-radius: 9rem;
+  width: 18rem;
+  height: 18rem;
+}
+.banner .diamond.map p {
+  font-size: 1.8rem;
+}
+.banner .diamond.map p span.icon {
+  margin: 4rem 0 0;
+  font-size: 7rem;
+}
+
+.banner .diamond.recommend {
+  top: 38rem;
+  left: -2rem;
+  border-radius: 7rem;
+  width: 14rem;
+  height: 14rem;
+}
+.banner .diamond.recommend p {
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+.banner .diamond.recommend p span.icon {
+  margin: 2.5rem 0 0;
+  font-size: 6rem;
+}
+
+.article h2 {
+  font-family: Impact;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.article ul {
+  padding: 0;
+}
+
+.article ul li {
+  border-top: 1px solid #e1e1e1;
+  list-style: none;
+  width: 100%;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+
+.article ul li a {
+  color: #434343;
+  outline: none;
+  text-decoration: none;
+}
+
+.article ul li .imgBox {
+  width: 40%;
+  float: left;
+  margin-right: 1rem;
+}
+
+.article ul li img {
+  width: 100%;
+  max-height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.article ul li .textBox {
+  display: table-cell;
+  float: left;
+  width: 55%;
+}
+
+.article ul li .textBox span {
+  display: block;
+}
+
+.article ul li .textBox .datetime {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.article p.moreLink {
+  text-align: right;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}

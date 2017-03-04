@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.core import serializers
 import json, decimal
 import os.path
+from django_user_agents.utils import get_user_agent
 
 # Create your views here.
 def insert(self):
@@ -29,18 +30,32 @@ def insert(self):
 
     return HttpResponse('ok')
 
-def map(request):
-    return render(request, 'map.html')
+def index(request):
+    if get_user_agent(request).is_mobile:
+        templatePath = 'sp/index.html'
+    else:
+        templatePath = 'sp/index.html'
+    return render(request, templatePath)
 
-def getShop(request):
+def map(request):
+    return render(request, 'sp/map.html')
+
+def Arealist(request, pref, city, category):
+    # 将来的にはreact-pythonを使いたい
+    return render(request, 'sp/list.html', {
+        'pref': pref,
+        'city': city
+        })
+
+def shop(request, shop_id):
+    shopData = Darts.objects.filter(id = shop_id).first()
+    return render(request, 'detail.html', {'shopData' : shopData})
+
+def ajaxDetail(request):
     from django.http import HttpResponse,Http404
 
     data = json.dumps(list(Darts.objects.values_list('latitude', 'longitude', 'name', 'id')), default=decimal_default)
     return HttpResponse(data)
-
-def showShop(request, shop_id):
-    shopData = Darts.objects.filter(id = shop_id).first()
-    return render(request, 'detail.html', {'shopData' : shopData})
 
 def decimal_default(obj):
     if isinstance(obj, decimal.Decimal):

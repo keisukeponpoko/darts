@@ -1,0 +1,26 @@
+{% extends "base/sp_base.html" %}
+{% load static %}
+
+{% block title %}
+  地図からダーツをできる場所を探す
+{% endblock %}
+
+{% block extraHead %}
+<link href="{% static 'css/sp/map.css' %}" rel='stylesheet' type='text/css'/>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&language=ja&key=AIzaSyBUCZztWDEPd3xVQyP0I09I7TMpy_XDPhg"></script>
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+<script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script>
+<link href='https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css' rel='stylesheet' type='text/css'/>
+<link href='https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css' rel='stylesheet' type='text/css'/>
+<script src='https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js'></script>
+{% endblock %}
+
+{% block content %}
+<div id="map" class="map"></div>
+{% endblock %}
+
+{% block extraBottom %}
+<script type="text/javascript" src="{% static 'js/common/map.js' %}"></script>
+{% endblock %}

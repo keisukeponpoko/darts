@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Darts Search Japan{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/sp/common.css' %}?abv" rel="stylesheet">
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/sp/common.js' %}"></script>
+    {% block extraHead %}{% endblock %}
+  </head>
+  <body>
+    {% block header_content %}
+      <header class="header">
+        <a href="{% url 'index' %}">Darts Search</a>
+        <div class="collapse-button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+      </header>
+      <ul class="collaspe-list">
+        <li>
+          <a href="{% url 'index' %}">
+            <div class="clearFix">
+              <span class="text">TOP</span>
+              <span class="glyphicon glyphicon-chevron-right icon"></span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'map' %}">
+            <div class="clearFix">
+              <span class="text">Search</span>
+              <span class="glyphicon glyphicon-chevron-right icon"></span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'map' %}">
+            <div class="clearFix">
+              <span class="text">Map</span>
+              <span class="glyphicon glyphicon-chevron-right icon"></span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'map' %}">
+            <div class="clearFix">
+              <span class="text">Article</span>
+              <span class="glyphicon glyphicon-chevron-right icon"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    {% endblock %}
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+
+    {% block footer_content %}
+      <footer class="footer">
+        <span>Presented By Roines</span>
+      </footer>
+    {% endblock %}
+  </body>
+  {% block extraBottom %}{% endblock %}
+  <script>
+  </script>
+</html>

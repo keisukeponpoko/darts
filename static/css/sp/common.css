@@ -1,0 +1,112 @@
+.container {
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.clearFix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+.header {
+  height: 3.5rem;
+  background: #ed6103;
+  position: relative;
+  width: 100%;
+  line-height: 3.5rem;
+  text-align: center;
+}
+
+.header a {
+  color: #fff;
+  font-family: Impact;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+
+.footer {
+  height: 3.5rem;
+  text-align: center;
+  background: #ed6103;
+}
+
+.footer span {
+  color: #fff;
+  padding: 1rem 1rem 0.5rem;
+  display: block;
+  font-size: 1.2rem;
+  font-family: Impact;
+  letter-spacing: 0.2rem;
+}
+
+.header .collapse-button {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  width: 4rem;
+  padding: 0.7rem 1rem;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.header .collapse-button .icon-bar {
+  display: block;
+  height: 0.2rem;
+  width: 1.8rem;
+  margin: 0.2rem 0;
+  background-color: #ed6103;
+  border-radius: 0.1rem;
+}
+
+ul.collaspe-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.collaspe-list li {
+  list-style: none;
+  line-height: 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  font-family: Impact;
+  letter-spacing: 0.2rem;
+}
+
+ul.collaspe-list li a {
+  color: black;
+  font-size: 1.8rem;
+}
+
+ul.collaspe-list li .text {
+  text-align: left;
+  display: block;
+  width: 90%;
+  float: left;
+  padding-left: 1rem;
+}
+
+ul.collaspe-list li .icon {
+  text-align: right;
+  display: block;
+  width: 10%;
+  float: right;
+  padding-right: 1rem;
+}

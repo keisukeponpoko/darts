@@ -1,0 +1,118 @@
+{% extends "base/sp_base.html" %}
+{% load static %}
+
+{% block extraHead %}
+<link href="{% static 'css/sp/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block header_content %}{% endblock %}
+
+{% block content %}
+<div class="banner">
+  <h1>Darts Search Japan</h1>
+  <a href="#a">
+    <div class="diamond area">
+      <p>
+        <span class="glyphicon glyphicon-search icon"></span>
+        <span class="text">Search</span>
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'map' %}">
+    <div class="diamond map">
+      <p>
+        <span class="glyphicon glyphicon-map-marker icon"></span>
+        <span class="text">Map</span>
+      </p>
+    </div>
+  </a>
+  <a href="{% url 'map' %}">
+    <div class="diamond recommend">
+      <p>
+        <span class="glyphicon glyphicon-thumbs-up icon"></span>
+        <span class="text">Recommend</span>
+      </p>
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <div class="article">
+    <h2>Article</h2>
+
+    <ul>
+      <li>
+        <article>
+          <a href="#image">
+            <div class="clearFix">
+              <div class="imgBox">
+                <img src="{% static 'image/sample.jpg' %}">
+              </div>
+
+              <div class="textBox">
+                <span>ダーツがうまくなる秘訣！大切な7つのポイントとは？</span>
+                <span class="datetime">2017.03.04</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </li>
+
+      <li>
+        <article>
+          <a href="#image">
+            <div class="clearFix">
+              <div class="imgBox">
+                <img src="{% static 'image/sample.jpg' %}">
+              </div>
+
+              <div class="textBox">
+                <span>ダーツがうまくなる秘訣！大切な7つのポイントとは？</span>
+                <span class="datetime">2017.03.04</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </li>
+
+      <li>
+        <article>
+          <a href="#image">
+            <div class="clearFix">
+              <div class="imgBox">
+                <img src="{% static 'image/sample.jpg' %}">
+              </div>
+
+              <div class="textBox">
+                <span>ダーツがうまくなる秘訣！大切な7つのポイントとは？</span>
+                <span class="datetime">2017.03.04</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </li>
+
+      <li>
+        <article>
+          <a href="#image">
+            <div class="clearFix">
+              <div class="imgBox">
+                <img src="{% static 'image/sample.jpg' %}">
+              </div>
+
+              <div class="textBox">
+                <span>ダーツがうまくなる秘訣！大切な7つのポイントとは？</span>
+                <span class="datetime">2017.03.04</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </li>
+    </ul>
+    <p class="moreLink">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      他の記事を見る
+    </p>
+  </div>
+</div>
+{% endblock %}

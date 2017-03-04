@@ -1,10 +1,18 @@
-<ul>
-  <li>{{ shopData.name }}</li>
-  <li>{{ shopData.holiday }}</li>
-  <li>{{ shopData.time }}</li>
-  <li>{{ shopData.address }}</li>
-  <li>{{ shopData.tel }}</li>
-  <li>{{ shopData.station }}</li>
-  <li>{{ shopData.url }}</li>
-  <li>{{ shopData.information }}</li>
-</ul>
+{% extends "layout/base.html" %}
+
+{% block title %}
+  {{ section.title }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+
+{% for story in story_list %}
+<h2>
+  <a href="{{ story.get_absolute_url }}">
+    {{ story.headline|upper }}
+  </a>
+</h2>
+<p>{{ story.tease|truncatewords:"100" }}</p>
+{% endfor %}
+{% endblock %}

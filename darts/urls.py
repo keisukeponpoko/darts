@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from shop import views
+from shop import views as shopView
 
 urlpatterns = [
-    url(r'^$', views.map),
+    url(r'^$', shopView.index, name='index'),
+    url(r'^map$', shopView.map, name='map'),
+    url(r'^list(/(?P<pref>[0-9]+))?(/(?P<city>[0-9_]+))?(/(?P<category>[0-9_]+))?$', shopView.Arealist, name='Arealist'),
+    url(r'^shop/(?P<shop_id>[0-9]+)$', shopView.shop, name='shop'),
     url(r'^admin/', admin.site.urls),
-    url(r'^insert/json$', views.insert),
-    url(r'^shop/get$', views.getShop),
-    url(r'^shop/(?P<shop_id>[0-9]+)$', views.showShop),
+    url(r'^insert/json$', shopView.insert),
+    url(r'^ajax/detail$', shopView.ajaxDetail),
 ]
