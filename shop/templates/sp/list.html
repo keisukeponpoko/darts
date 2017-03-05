@@ -1,14 +1,107 @@
 {% extends "base/sp_base.html" %}
 {% load static %}
+{% load create_url %}
 
 {% block title %}
-  〇〇のダーツが遊べるお店
+〇〇のダーツが遊べるお店
 {% endblock %}
 
 {% block extraHead %}
+<link href="{% static 'css/sp/list.css' %}?b" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<h1>{{ pref }}</h1>
-<h1>{{ city }}</h1>
+<div class="searchBox">
+  <div class="area">
+    <span class="text">{{ areaName }}のダーツバー</span>
+    <span class="btn">条件変更</span>
+  </div>
+  <div class="category">
+    <a href="{% areaUrl pref city 1 %}">
+      <span class="btn {% if category == '1' %}active{% endif %}">ダーツライブ</span>
+    </a>
+    <a href="{% areaUrl pref city 2 %}">
+      <span class="btn {% if category == '2' %}active{% endif %}">フェニックス</span>
+    </a>
+    <a href="{% areaUrl pref city 3 %}">
+      <span class="btn {% if category == '3' %}active{% endif %}">投げ放題</span>
+    </a>
+  </div>
+</div>
+
+{% if shopList %}
+  <section class="shopList">
+    <ul>
+      {% for shop in shopList  %}
+        <li>
+          <a href="{% url 'shop' shop.id %}">
+            <div class="innerHead">
+              <span class="name">{{ shop.name }}</span>
+              <span class="address">{{ shop.address }}</span>
+            </div>
+            <div class="innerInfo">
+                {% if forloop.counter == 1 %}
+                  <div class="imgWrap clearFix">
+                    <img src="{% static 'image/sample.jpg' %}">
+                    <img src="{% static 'image/sample.jpg' %}">
+                  </div>
+
+                  <div class="descriptionWrap">
+                    ここに説明文がだらだらだらと入っていきますーあああああああああああああああああああああああああああああ
+                  </div>
+                {% endif %}
+              </a>
+            </div>
+            <div class="innerFoot">
+              <div class="footList station">
+                <span class="icon"></span>
+                {{ shop.station|default:'-' }}
+              </div>
+              <div class="footList time">
+                <span class="icon"></span>
+                {{ shop.time|default:'-' }}
+              </div>
+              <div class="footList holiday">
+                <span class="icon"></span>
+                {{ shop.holiday|default:'-' }}
+              </div>
+              <div class="footList dartslive">
+                <span class="icon"></span>
+                {{ shop.dartslive }}台
+              </div>
+              <div class="footList phoenix">
+                <span class="icon"></span>
+                {{ shop.phoenix }}台
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="paginatorBox">
+      <ul class="pagination">
+        <li class="step-links">
+          {% if shopList.has_previous %}
+            <li><a href="{% areaUrl pref city category shopList.previous_page_number %}">«</a></li>
+          {% endif %}
+
+          {% for i in shopList.paginator.page_range %}
+            {% if shopList.number == i %}
+              <li class="active"><a href="#">{{ i }}</a></li>
+            {% elif shopList.number|add:"3" > i and shopList.number|add:"-3" < i  %}
+              <li><a href="{% areaUrl pref city category i %}">{{ i }}</a></li>
+            {% endif %}
+          {% endfor %}
+
+          {% if shopList.has_next %}
+            <li><a href="{% areaUrl pref city category shopList.next_page_number %}">»</a></li>
+          {% endif %}
+        </span>
+      </ul>
+    </div>
+  </section>
+{% else %}
+  見つかりません。
+{% endif %}
 {% endblock %}

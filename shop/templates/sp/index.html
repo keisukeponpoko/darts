@@ -10,7 +10,7 @@
 {% block content %}
 <div class="banner">
   <h1>Darts Search Japan</h1>
-  <a href="#a">
+  <a href="{% url 'areaList' '/pref=13' %}">
     <div class="diamond area">
       <p>
         <span class="glyphicon glyphicon-search icon"></span>
@@ -26,7 +26,7 @@
       </p>
     </div>
   </a>
-  <a href="{% url 'map' %}">
+  <a href="{% url 'shop' 1 %}">
     <div class="diamond recommend">
       <p>
         <span class="glyphicon glyphicon-thumbs-up icon"></span>

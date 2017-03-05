@@ -24,7 +24,7 @@
 .header a {
   color: #fff;
   font-family: Impact;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
   font-size: 2rem;
 }
 
@@ -36,24 +36,24 @@
 
 .footer span {
   color: #fff;
-  padding: 1rem 1rem 0.5rem;
+  padding: 1rem 1rem .5rem;
   display: block;
   font-size: 1.2rem;
   font-family: Impact;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 .header .collapse-button {
   position: absolute;
-  right: 0.8rem;
+  right: .8rem;
   top: 50%;
   width: 4rem;
-  padding: 0.7rem 1rem;
+  padding: .7rem 1rem;
   color: #FFFFFF;
   font-size: 1.4rem;
   text-align: center;
   background-color: #FFFFFF;
-  border-radius: 0.2rem;
+  border-radius: .2rem;
   cursor: pointer;
   transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
@@ -67,11 +67,11 @@
 
 .header .collapse-button .icon-bar {
   display: block;
-  height: 0.2rem;
+  height: .2rem;
   width: 1.8rem;
-  margin: 0.2rem 0;
+  margin: .2rem 0;
   background-color: #ed6103;
-  border-radius: 0.1rem;
+  border-radius: .1rem;
 }
 
 ul.collaspe-list {
@@ -87,7 +87,7 @@ ul.collaspe-list li {
   padding: 1rem 0;
   border-bottom: 1px solid #ccc;
   font-family: Impact;
-  letter-spacing: 0.2rem;
+  letter-spacing: .2rem;
 }
 
 ul.collaspe-list li a {
@@ -109,4 +109,17 @@ ul.collaspe-list li .icon {
   width: 10%;
   float: right;
   padding-right: 1rem;
+}
+
+.paginatorBox {
+  text-align: center;
+}
+
+.pagination>li>a, .pagination>li>span {
+  color: #ed6103;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #ed6103;
+    border-color: #ed6103;
 }

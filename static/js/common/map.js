@@ -7,14 +7,14 @@ var roadMutant = L.gridLayer.googleMutant({
 
 var markers = L.markerClusterGroup();
 
-$.getJSON("shop/get", function(data) {
+$.getJSON("ajax/detail", function(data) {
   var len = data.length;
 
   for(var i = 0; i < len; i++) {
     var shop = data[i];
     var title = shop[2];
     var marker = L.marker(new L.LatLng(shop[0], shop[1]), { title: title });
-    marker.bindPopup('<a href="shop/' + shop[3] + '" target="_blank">' + title + '</a>');
+    marker.bindPopup('<a href="shop/' + shop[3] + '/" target="_blank">' + title + '</a>');
     markers.addLayer(marker);
   }
 

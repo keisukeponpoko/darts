@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from django.core.management.base import BaseCommand
-from shop.models import Darts, Pref, City, Station, Line, LineStation
+from shop.models import Shop, Pref, City, Station, Line, LineStation
 
 
 # BaseCommandを継承して作成
@@ -16,10 +16,39 @@ class Command(BaseCommand):
     # コマンドが実行された際に呼ばれるメソッド
     def handle(self, *args, **options):
         if options['type'] == 1:
-            self.insertDarts()
+            self.insertShop()
         elif options['type'] == 2:
             self.insertPref()
             self.insertCity()
+
+    def insertShop(self):
+        import random
+
+        for shopData in self.getJson('format'):
+            shop = Shop()
+            shop.name = shopData['name']
+            shop.latitude = shopData['latitude'] if shopData['latitude'] else 0
+            shop.longitude = shopData['longitude'] if shopData['longitude'] else 0
+            shop.holiday = shopData['holiday']
+            shop.station = shopData['station']
+            shop.time = shopData['time']
+            shop.address = shopData['address']
+            shop.tel = shopData['tel']
+            shop.url = shopData['url']
+            shop.dartslive = shopData['dartslive']
+            shop.phoenix = shopData['dartslive']
+            shop.information = shopData['information']
+            shop.pref_id = 13
+            shop.city_id = random.uniform(13101, 13123)
+
+            try:
+                shop.save()
+            except:
+                shop.information = ''
+                shop.save()
+                print(shopData['name'] + 'は環境依存文字が使われています。')
+
+        print('shop data insert')
 
     def insertPref(self):
         for data in self.getJson('pref'):

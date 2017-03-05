@@ -13,16 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf import settings
 from shop import views as shopView
+
 
 urlpatterns = [
     url(r'^$', shopView.index, name='index'),
     url(r'^map$', shopView.map, name='map'),
-    url(r'^list(/(?P<pref>[0-9]+))?(/(?P<city>[0-9_]+))?(/(?P<category>[0-9_]+))?$', shopView.Arealist, name='Arealist'),
-    url(r'^shop/(?P<shop_id>[0-9]+)$', shopView.shop, name='shop'),
+    url(r'^list(?P<param>(/(pref|city|category|page)=[0-9_]+)+)/$', shopView.Arealist, name='areaList'),
+    url(r'^shop/(?P<shop_id>[0-9]+)/$', shopView.shop, name='shop'),
     url(r'^admin/', admin.site.urls),
-    url(r'^insert/json$', shopView.insert),
     url(r'^ajax/detail$', shopView.ajaxDetail),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+
+    urlpatterns += [
+        url(r'^__debug__/', include(debug_toolbar.urls))
+    ]
